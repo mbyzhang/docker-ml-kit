@@ -1,0 +1,10 @@
+services:
+  main:
+    build: .
+    ports:
+      - 10022:22
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
