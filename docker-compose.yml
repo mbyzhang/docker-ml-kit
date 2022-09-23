@@ -1,6 +1,7 @@
 services:
   main:
     build: .
+    restart: always
     ports:
       - 10022:22
     deploy:
